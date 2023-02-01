@@ -25,7 +25,7 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "InfluxDB_v2_Flux",
-      "description": "gatling.computerdatabasesimulation.allRequests.all.count",
+      "description": "gatling.mycomputersimulation.allRequest.all.count",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -85,7 +85,7 @@
           ],
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "from(bucket: \"perf-bucket\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"gatling.computerdatabasesimulation.allRequests.all.count\" )\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+          "query": "from(bucket: \"perf-bucket\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"gatling.mycomputersimulation.allRequests.all.count\" )\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
           "queryType": "randomWalk",
           "refId": "A",
           "resultFormat": "time_series",
@@ -110,7 +110,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "gatling.computerdatabasesimulation.allRequests.all.count",
+      "title": "gatling.mycomputersimulation.allRequests.all.count",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -155,7 +155,7 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "InfluxDB_v2_Flux",
-      "description": "gatling.computerdatabasesimulation.allRequests.ok.count",
+      "description": "gatling.mycomputersimulation.allRequests.ok.count",
       "fieldConfig": {
         "defaults": {
           "color": {},
@@ -223,7 +223,7 @@
           ],
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "from(bucket: \"perf-bucket\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"gatling.computerdatabasesimulation.allRequests.ok.count\" )\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+          "query": "from(bucket: \"perf-bucket\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"gatling.mycomputersimulation.allRequests.ok.count\" )\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
           "queryType": "randomWalk",
           "refId": "A",
           "resultFormat": "time_series",
@@ -248,7 +248,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "gatling.computerdatabasesimulation.allRequests.ok.count",
+      "title": "gatling.mycomputersimulation.allRequests.ok.count",
       "tooltip": {
         "shared": true,
         "sort": 0,
@@ -293,7 +293,7 @@
       "dashLength": 10,
       "dashes": false,
       "datasource": "InfluxDB_v2_Flux",
-      "description": "gatling.computerdatabasesimulation.allRequests.ko.count",
+      "description": "gatling.mycomputersimulation.allRequests.ko.count",
       "fieldConfig": {
         "defaults": {
           "color": {},
@@ -361,7 +361,7 @@
           ],
           "orderByTime": "ASC",
           "policy": "default",
-          "query": "from(bucket: \"perf-bucket\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"gatling.computerdatabasesimulation.allRequests.ko.count\" )\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+          "query": "from(bucket: \"perf-bucket\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"gatling.mycomputersimulation.allRequests.ko.count\" )\n  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
           "queryType": "randomWalk",
           "refId": "A",
           "resultFormat": "time_series",
@@ -386,7 +386,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "gatling.computerdatabasesimulation.allRequests.ko.count",
+      "title": "gatling.mycomputersimulation.allRequests.ko.count",
       "tooltip": {
         "shared": true,
         "sort": 0,
